@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/app/app';
+import {questions} from './mocks/questions';
 
 const Setting = {
   ErrorsCount: 3,
@@ -13,7 +14,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App
-      errorsCount = {Setting.ErrorsCount}
+      errorsCount={Setting.ErrorsCount}
+      questions = {questions}
     />
   </React.StrictMode>,
 );
